@@ -1,0 +1,25 @@
+body {
+     background-color: #0a0a0a;
+     color: #b794f4;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .hero.is-dark {
+     background-color: #3d0075;
+ }
+
+ .box {
+     background-color: #1a1a1a;
+     border: 1px solid #5c4d91;
+ }
+
+ .navbar,
+ .footer {
+     background-color: #2a0055;
+ }
+
+ .has-text-purple {
+     color: #b794f4 !important;
+ }
+
+ 

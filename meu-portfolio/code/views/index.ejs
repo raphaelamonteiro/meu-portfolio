@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raphaela Monteiro - Portfólio</title>
+  <!-- Bulma CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Seu estilo personalizado -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!--Icones-->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=play_arrow" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-white" href="#">Raphaela Monteiro</a>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item has-text-white" href="#sobre">Sobre</a>
+        <a class="navbar-item has-text-white" href="#projetos">Projetos</a>
+        <a class="navbar-item has-text-white" href="#contato">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero is-dark is-bold is-medium">
+    <div class="hero-body has-text-centered">
+      <p class="title">
+        Bem-vindo!
+      </p>
+      <p class="subtitle">
+        Desenvolvedor(a) Web | Node.js | Express | EJS
+      </p>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="title has-text-centered has-text-purple">Sobre Mim</h2>
+      <div class="content has-text-justified">
+        <p>
+          Desenvolvedora Full-Stack apaixonada por tecnologia, inovação e aprendizado contínuo!
+          <br>
+          💡 Minha jornada na tecnologia começou com o curso técnico em Desenvolvimento de Sistemas pela ETEC, onde
+          aprendi sobre
+          algoritmos, fundamentos do desenvolvimento de software e criação de interfaces dinâmicas e funcionais.
+          Atualmente, curso
+          Análise e Desenvolvimento de Sistemas na FATEC Prof. Jessen Vidal, aprimorando minha compreensão teórica e
+          prática na
+          área.
+          <br>
+          Atuo no desenvolvimento front-end, criando interfaces dinâmicas e responsivas com HTML, CSS, JavaScript e
+          TypeScript.
+          Tenho experiência com Angular e React.js, que me permitem construir aplicações modernas e escaláveis. No
+          back-end,
+          trabalho com Java, Python e Node.js, criando soluções robustas e integradas a bancos de dados SQL (MySQL e
+          PostgreSQL).
+          <br>
+          🚀 Minha paixão por engenharia de software e inovação me motiva a criar soluções tecnológicas eficientes e
+          escaláveis.
+          Adoro enfrentar desafios que me permitam crescer como profissional e contribuir para projetos impactantes.
+          <br>
+          💡 Em meus projetos, aplico metodologias ágeis, com foco em Scrum, garantindo entregas eficientes e
+          organizadas. Tenho
+          experiência em trabalhar em times multidisciplinares, participando de sprints, planejamentos e revisões para
+          aprimorar
+          continuamente os resultados.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Meus Projetos -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <h2 class="title has-text-centered has-text-purple">Meus Projetos</h2>
+      <div class="columns is-multiline">
+        <% projetos.forEach(projeto=> { %>
+          <div class="column is-6-tablet is-4-desktop">
+            <div class="card" style="height: 100%;">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="<%= projeto.imagem %>" alt="Imagem do projeto">
+                </figure>
+              </div>
+              <div class="card-content is-flex-grow-1">
+
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-5 has-text-purple">
+                      <%= projeto.titulo %>
+                    </p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p>
+                    <%= projeto.descricao %>
+                  </p>
+
+                  <div class="tags mt-3">
+                    <% projeto.tecnologias.forEach(tec=> { %>
+                      <span class="tag is-info is-light">
+                        <%= tec %>
+                      </span>
+                      <% }); %>
+                  </div>
+                  
+
+  <div class="card-footer is-flex is-justify-content-space-between mt-4">
+                      <p class="mt-4">
+                        <a href="<%= projeto.github %>" class="button is-small is-link is-light" target="_blank">
+                          <i class="devicon-github-original"></i>&nbsp; Ver no GitHub
+                        </a>
+                      </p>
+
+                      <p class="mt-4">
+                        <a href="<%= projeto.video %>" class="button is-small is-link is-light" target="_blank">
+                          <span class="material-symbols-outlined">
+                            play_arrow
+                          </span>
+                          &nbsp; Vídeo de Demonstração
+                        </a>
+                      </p>
+</div>
+                          
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }); %>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contato -->
+  <section class="section" id="contato">
+    <div class="container">
+      <h2 class="title has-text-centered has-text-purple">Contato</h2>
+      <div class="box">
+        <form action="#">
+          <div class="field">
+            <label class="label has-text-white">Nome</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Seu nome">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label has-text-white">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="seu@email.com">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label has-text-white">Mensagem</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Digite sua mensagem..."></textarea>
+            </div>
+          </div>
+
+          <div class="control">
+            <button class="button is-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer has-text-white has-text-centered">
+    <p>
+      &copy; 2025 Raphaela Monteiro - Todos os direitos reservados
+    </p>
+  </footer>
+</body>
+
+</html>

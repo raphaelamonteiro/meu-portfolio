@@ -1,0 +1,14 @@
+{
+  "name": "meu-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio acadêmico com Node.js, Express e EJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bulma": "^1.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
