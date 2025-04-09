@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+    <h2>Meus Projetos</h2>
+    <ul>
+        <% projetos.forEach(proj=> { %>
+            <li>
+                <strong>
+                    <%= proj.titulo %>
+                </strong>: <%= proj.descricao %>
+            </li>
+            <% }); %>
+    </ul>
+    <%- include('partials/footer') %>
