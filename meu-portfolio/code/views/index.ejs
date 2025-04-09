@@ -48,39 +48,29 @@
   <!-- Sobre -->
   <section class="section" id="sobre">
     <div class="container">
-      <h2 class="title has-text-centered has-text-purple">Sobre Mim</h2>
-      <div class="content has-text-justified">
-        <p>
-          Desenvolvedora Full-Stack apaixonada por tecnologia, inovação e aprendizado contínuo!
-          <br>
-          💡 Minha jornada na tecnologia começou com o curso técnico em Desenvolvimento de Sistemas pela ETEC, onde
-          aprendi sobre
-          algoritmos, fundamentos do desenvolvimento de software e criação de interfaces dinâmicas e funcionais.
-          Atualmente, curso
-          Análise e Desenvolvimento de Sistemas na FATEC Prof. Jessen Vidal, aprimorando minha compreensão teórica e
-          prática na
-          área.
-          <br>
-          Atuo no desenvolvimento front-end, criando interfaces dinâmicas e responsivas com HTML, CSS, JavaScript e
-          TypeScript.
-          Tenho experiência com Angular e React.js, que me permitem construir aplicações modernas e escaláveis. No
-          back-end,
-          trabalho com Java, Python e Node.js, criando soluções robustas e integradas a bancos de dados SQL (MySQL e
-          PostgreSQL).
-          <br>
-          🚀 Minha paixão por engenharia de software e inovação me motiva a criar soluções tecnológicas eficientes e
-          escaláveis.
-          Adoro enfrentar desafios que me permitam crescer como profissional e contribuir para projetos impactantes.
-          <br>
-          💡 Em meus projetos, aplico metodologias ágeis, com foco em Scrum, garantindo entregas eficientes e
-          organizadas. Tenho
-          experiência em trabalhar em times multidisciplinares, participando de sprints, planejamentos e revisões para
-          aprimorar
-          continuamente os resultados.
-        </p>
+      <h2 class="title has-text-centered has-text-purple mb-6">Sobre Mim</h2>
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-one-third has-text-centered">
+          <figure class="image is-1by1 is-inline-block" style="max-width: 250px;">
+            <img src="/../images/rapha.png" alt="Minha foto">
+          </figure>
+        </div>
+        <div class="column is-two-thirds">
+          <div class="content">
+            <p>
+              Olá! Sou uma desenvolvedora apaixonada por tecnologia, focada em criar soluções criativas e funcionais.
+              Tenho experiência com Node.js, Express, EJS e Bulma. Sempre em busca de aprender mais e transformar ideias
+              em código.
+            </p>
+            <p>
+              Estou disponível para colaborações e projetos empolgantes 🚀
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
 
   <!-- Seção Meus Projetos -->
   <section class="section" id="projetos">
@@ -91,9 +81,11 @@
           <div class="column is-6-tablet is-4-desktop">
             <div class="card" style="height: 100%;">
               <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="<%= projeto.imagem %>" alt="Imagem do projeto">
+                <figure class="image aspect-1512x982">
+                  <img src="<%= projeto.imagem %>" alt="Imagem do projeto" />
                 </figure>
+
+
               </div>
               <div class="card-content is-flex-grow-1">
 
@@ -116,25 +108,24 @@
                       </span>
                       <% }); %>
                   </div>
-                  
 
-  <div class="card-footer is-flex is-justify-content-space-between mt-4">
-                      <p class="mt-4">
-                        <a href="<%= projeto.github %>" class="button is-small is-link is-light" target="_blank">
-                          <i class="devicon-github-original"></i>&nbsp; Ver no GitHub
-                        </a>
-                      </p>
+                  <div class="card-footer is-flex is-justify-content-space-between mt-4">
+                    <p class="mt-4">
+                      <a href="<%= projeto.github %>" class="button is-small is-link is-light" target="_blank">
+                        <i class="devicon-github-original"></i>&nbsp; Ver no GitHub
+                      </a>
+                    </p>
 
-                      <p class="mt-4">
-                        <a href="<%= projeto.video %>" class="button is-small is-link is-light" target="_blank">
-                          <span class="material-symbols-outlined">
-                            play_arrow
-                          </span>
-                          &nbsp; Vídeo de Demonstração
-                        </a>
-                      </p>
-</div>
-                          
+                    <p class="mt-4">
+                      <a href="<%= projeto.video %>" class="button is-small is-link is-light" target="_blank">
+                        <span class="material-symbols-outlined">
+                          play_arrow
+                        </span>
+                        &nbsp; Vídeo de Demonstração
+                      </a>
+                    </p>
+                  </div>
+
                 </div>
               </div>
             </div>

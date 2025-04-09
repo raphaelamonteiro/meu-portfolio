@@ -21,5 +21,18 @@ body {
  .has-text-purple {
      color: #b794f4 !important;
  }
+.aspect-1512x982 {
+    aspect-ratio: 1512 / 982;
+    overflow: hidden;
+}
 
- 
+.aspect-1512x982 {
+    aspect-ratio: 1512 / 982;
+    overflow: hidden;
+}
+
+.aspect-1512x982 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
