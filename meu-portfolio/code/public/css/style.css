@@ -1,38 +1,149 @@
+/* 🌙 Tema geral */
 body {
-     background-color: #0a0a0a;
-     color: #b794f4;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
-
- .hero.is-dark {
-     background-color: #3d0075;
- }
-
- .box {
-     background-color: #1a1a1a;
-     border: 1px solid #5c4d91;
- }
-
- .navbar,
- .footer {
-     background-color: #2a0055;
- }
-
- .has-text-purple {
-     color: #b794f4 !important;
- }
-.aspect-1512x982 {
-    aspect-ratio: 1512 / 982;
-    overflow: hidden;
+    background-color: #070F2B;
+    color: #c9c5e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
+/* 🧭 Navbar e rodapé */
+.navbar,
+.footer {
+    background-color: #3B1E54;
+}
+
+.navbar-item:hover {
+    background-color: #1E1235;
+    color: #FFE1FF !important;
+}
+
+/* 🟪 Hero com degradê dark */
+.hero {
+    background: linear-gradient(to right, #1a102b, #2a1850);
+    color: #ffffff;
+}
+
+/* Botões principais */
+.button.is-link {
+    background-color: #17153B;
+    border-color: #7c3aed;
+    color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button.is-link:hover {
+    background-color: #a78bfa;
+    border-color: #a78bfa;
+}
+
+/* 🎨 Cores utilitárias */
+.has-text-purple-light {
+    color: #a78bfa;
+}
+
+.has-text-purple {
+    color: #b794f4 !important;
+}
+
+#sobre .content h1,
+#sobre .content p {
+    color: #f0e9ff;
+}
+#sobre {
+    padding: 3rem 1.5rem;
+    border-radius: 12px;
+}
+#sobre h1.title {
+    font-size: 4rem;
+
+    margin-bottom: 3rem;
+    color: #a78bfa;
+}
+
+#sobre h2.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #a78bfa;
+}
+
+.sobre-box {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #7c3aed;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+}
+.social-icons .button {
+    margin: 0 0.25rem;
+    transition: transform 0.2s ease;
+}
+
+.social-icons .button:hover {
+    transform: scale(1.15);
+    border-radius: 10rem;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.minha-foto {
+    border: 3px solid #7c3aed;
+    box-shadow: 0 0 12px rgba(124, 58, 237, 0.6);
+}
+
+/* 📦 Cards */
+.box,
+.card {
+  background: rgba(30, 30, 47, 0.6); /* roxo escuro translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #E0D8F6;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+.card-footer {
+    border-top: none !important;
+    background: transparent;
+    padding-top: 0.5rem;
+}
+
+/* 📷 Imagens com proporção específica */
 .aspect-1512x982 {
     aspect-ratio: 1512 / 982;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .aspect-1512x982 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* ✨ Hero customizado com imagem de fundo */
+.hero-custom {
+    background-image: url('/images/fundo-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.6);
+    /* overlay escuro */
+    z-index: -1;
 }

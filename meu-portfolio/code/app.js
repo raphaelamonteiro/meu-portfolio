@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
 const projetos = [
   {
     titulo: 'Aprenda Scrum!',
-    descricao: 'A plataforma oferece uma abordagem prática sobre os processos do Scrum, abrangendo papéis, artefatos, eventos e fluxos de trabalho. Com conteúdos bem estruturados e exemplos aplicáveis, o usuário é conduzido por uma jornada de aprendizado que facilita a assimilação dos conceitos e apoia a implementação no ambiente corporativo.',
+    descricao: 'Plataforma web que oferece uma abordagem prática sobre os processos do Scrum, abrangendo papéis, artefatos, eventos e fluxos de trabalho. Com conteúdos bem estruturados e exemplos aplicáveis, o usuário é conduzido por uma jornada de aprendizado que facilita a assimilação dos conceitos e apoia a implementação no ambiente corporativo.',
     imagem: '/images/1Projeto.png',
     github: 'https://github.com/raphaelamonteiro/API-SEMESTRE1',
     video: 'https://www.youtube.com/watch?v=7vTisQebZxs',
-    tecnologias: ['HTML', 'CSS','Python','Flask', 'MySQL','AWS','...']
+    tecnologias: ['HTML', 'CSS','Bootstrap','Python','Flask', 'MySQL','AWS','...']
   },
     {
     titulo: 'MindDoc Analyzer ',
@@ -21,7 +21,7 @@ const projetos = [
     imagem: '/images/2Projeto.png',
       github: 'https://github.com/raphaelamonteiro/API-SEMESTRE2',
       video: 'https://youtu.be/yDJxmulN8Cw?si=kNkxcch8HvXW2fSl',
-    tecnologias: ['Java', 'Figma', 'CSS', 'Ollama', 'MySQL', '...']
+    tecnologias: ['Java','JavaFX', 'CSS', 'Figma',  'Ollama', 'MySQL','JUnit','Apache Maven', '...']
   },
   {
     titulo: 'AdaTrade',
@@ -29,7 +29,7 @@ const projetos = [
     imagem: '/images/3Projeto.png',
     github: 'https://github.com/equipeAdalove/API-SEMESTRE3',
     video: 'https://github.com/equipeAdalove/API-SEMESTRE3',
-    tecnologias: ['HTML', 'CSS', 'ReactJs', 'NestJs','Python','Colab', '...']
+    tecnologias: ['HTML', 'CSS','TypeScript', 'ReactJs','NodeJs', 'NestJs','Python','Google Colab','PostgreSQL', '...']
   }
 ];
 
