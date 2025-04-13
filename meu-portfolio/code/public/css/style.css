@@ -1,29 +1,45 @@
-/* 🌙 Tema geral */
+/* 🌐 Rolagem suave ao clicar nos links de navegação */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 🌙 Estilo geral do corpo da página */
 body {
     background-color: #070F2B;
+    /* Fundo roxo escuro */
     color: #c9c5e6;
+    /* Texto claro suave */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
 }
 
-/* 🧭 Navbar e rodapé */
-.navbar,
-.footer {
-    background-color: #3B1E54;
+/* 🧭 Navbar */
+nav.navbar {
+    background-color: #7a5af5 !important;
+    /* Fundo da navbar */
 }
 
-.navbar-item:hover {
-    background-color: #1E1235;
-    color: #FFE1FF !important;
+nav.navbar .navbar-item {
+    color: #d1c4e9 !important;
+    /* Cor dos itens */
 }
 
-/* 🟪 Hero com degradê dark */
+nav.navbar .navbar-item:hover {
+    background-color: #5e3ea1 !important;
+    /* Hover com roxo mais escuro */
+    color: #fff !important;
+    /* Texto branco ao passar o mouse */
+}
+
+
+/* 🟪 Seção Hero com degradê escuro */
 .hero {
     background: linear-gradient(to right, #1a102b, #2a1850);
+    /* Degradê horizontal */
     color: #ffffff;
 }
 
-/* Botões principais */
+/* 🎯 Botões principais estilo roxo escuro */
 .button.is-link {
     background-color: #17153B;
     border-color: #7c3aed;
@@ -36,7 +52,7 @@ body {
     border-color: #a78bfa;
 }
 
-/* 🎨 Cores utilitárias */
+/* 🎨 Cores utilitárias customizadas */
 .has-text-purple-light {
     color: #a78bfa;
 }
@@ -45,17 +61,19 @@ body {
     color: #b794f4 !important;
 }
 
-#sobre .content h1,
-#sobre .content p {
-    color: #f0e9ff;
-}
+/* 🧾 Seção Sobre */
 #sobre {
     padding: 3rem 1.5rem;
     border-radius: 12px;
 }
+
+#sobre .content h1,
+#sobre .content p {
+    color: #f0e9ff;
+}
+
 #sobre h1.title {
     font-size: 4rem;
-
     margin-bottom: 3rem;
     color: #a78bfa;
 }
@@ -66,14 +84,18 @@ body {
     color: #a78bfa;
 }
 
+/* 💼 Box da seção Sobre com efeito glassmorphism */
 .sobre-box {
     background-color: rgba(0, 0, 0, 0.3);
+    /* Fundo escuro transparente */
     border: 1px solid #7c3aed;
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(6px);
 }
+
+/* 🌐 Ícones sociais */
 .social-icons .button {
     margin: 0 0.25rem;
     transition: transform 0.2s ease;
@@ -81,39 +103,81 @@ body {
 
 .social-icons .button:hover {
     transform: scale(1.15);
-    border-radius: 10rem;
+    /* Aumenta o botão ao passar o mouse */
+    border-radius: 100rem;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
+/* 🖼️ Estilo da foto */
 .minha-foto {
     border: 3px solid #7c3aed;
     box-shadow: 0 0 12px rgba(124, 58, 237, 0.6);
 }
 
-/* 📦 Cards */
-.box,
-.card {
-  background: rgba(30, 30, 47, 0.6); /* roxo escuro translúcido */
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #E0D8F6;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+.skills-container .tag {
+    margin: 0.05rem;
 }
+.tags {
+    flex-wrap: wrap;
+    gap: 0.002rem;
+}
+
+
+/* 📦 Estilo dos cards e boxes */
+.box,
+.card {
+    background: rgba(30, 30, 47, 0.6);
+    /* Fundo roxo escuro com transparência */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #E0D8F6;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animação de elevação ao passar o mouse */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Remove o fundo do rodapé do card */
 .card-footer {
     border-top: none !important;
     background: transparent;
     padding-top: 0.5rem;
 }
 
-/* 📷 Imagens com proporção específica */
+/* 📺 Estilo responsivo para vídeos (ex: YouTube embed) */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 📷 Estilo para imagens com proporção fixa */
 .aspect-1512x982 {
     aspect-ratio: 1512 / 982;
     overflow: hidden;
@@ -126,9 +190,8 @@ body {
     object-fit: cover;
 }
 
-/* ✨ Hero customizado com imagem de fundo */
+/* ✨ Hero customizado com imagem de fundo e overlay */
 .hero-custom {
-    background-image: url('/images/fundo-hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,6 +207,73 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(10, 10, 10, 0.6);
-    /* overlay escuro */
+    /* Camada escura por cima da imagem */
     z-index: -1;
 }
+
+/* 📬 Seção de contato com estilo moderno */
+.contact-section {
+    background: linear-gradient(145deg, #0e0e2e, #1f1f3f);
+    /* Degradê escuro */
+    padding: 5rem 1.5rem;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+/* Botões da seção de contato */
+.contact-buttons .contact-button {
+    margin: 0.5rem;
+    background-color: #2e2e6f;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-buttons .contact-button:hover {
+    background-color: #7a5af5;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* 🦶 Rodapé com degradê roxo */
+.footer {
+    background: linear-gradient(to right, #5e3ea1, #7a5af5);
+    padding: 2rem 1rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Texto principal do rodapé */
+.footer-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #f3e8ff;
+}
+
+/* Container de ícones sociais do rodapé */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo dos ícones */
+.footer-icon {
+    font-size: 2rem;
+    color: #ffffff;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1);
+    /* Pode ajustar pra 1.15 se quiser animar */
+    color: #d1c4e9;
+}
+
+/* Texto de direitos autorais */
+.footer-copy {
+    font-size: 0.9rem;
+    color: #e0d6f9;
+} 

@@ -10,38 +10,63 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
   <!-- Ícones e fontes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
   <!-- Estilo personalizado -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
+<script>
+  function openModal(id) {
+    document.getElementById('modal-' + id).classList.add('is-active');
+  }
+
+  function closeModal(id) {
+    document.getElementById('modal-' + id).classList.remove('is-active');
+  }
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.getElementById(burger.dataset.target);
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  });
+</script>
+
+
 <body>
   <!-- Navbar -->
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item has-text-purple" href="#sobre">
-        <strong>Meu Portfólio</strong>
+      <a class="navbar-item" href="#sobre">
+        Meu Portfólio
       </a>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuNav">
+      <!-- Botão hamburguer -->
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
 
-    <div id="menuNav" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item has-text-purple" href="#sobre">Sobre</a>
-        <a class="navbar-item has-text-purple" href="#skills">Habilidades</a>
-        <a class="navbar-item has-text-purple" href="#certificados">Certificações</a>
-        <a class="navbar-item has-text-purple" href="#projetos">Projetos</a>
-        <a class="navbar-item has-text-purple" href="#contato">Contato</a>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end is-link">
+        <a class="navbar-item" href="#sobre">Sobre</a>
+        <a class="navbar-item" href="#skills">Habilidades</a>
+        <a class="navbar-item" href="#certificados">Certificações</a>
+        <a class="navbar-item" href="#projetos">Projetos</a>
+        <a class="navbar-item" href="#contato">Contato</a>
       </div>
     </div>
   </nav>
+
 
   <!-- Hero -->
   <section class="hero is-fullheight hero-background has-text-white">
@@ -51,11 +76,14 @@
         <h2 class="subtitle is-4 has-text-grey-lighter">Raphaela Monteiro</h2>
 
         <div class="buttons is-centered mt-5">
-          <a href="#projetos" class="button is-link is-medium is-rounded has-text-weight-semibold">Ver Projetos</a>
-          <a href="#contato" class="button is-light is-medium is-rounded has-text-weight-semibold">
-            <span class="material-symbols-outlined">download</span>
+          <a href="#projetos" class="button is-link is-medium is-rounded has-text-weight-semibold">
+            Ver Projetos</a>
+          <a href="/cv/Curriculo - Raphaela.pdf" download
+            class="button is-link is-medium is-rounded has-text-weight-semibold">
+            <i class="fa-solid fa-file-arrow-down"></i>
             &nbsp;Download CV
           </a>
+
         </div>
       </div>
     </div>
@@ -64,29 +92,26 @@
   <!-- Sobre -->
   <section class="section" id="sobre">
     <div class="container">
+
+    </div>
+    <div class="container">
       <h2 class="title has-text-centered has-text-purple">Sobre Mim</h2>
       <div class="columns is-vcentered">
         <div class="column is-one-third has-text-centered">
           <figure class="image is-256x256 is-inline-block">
-            <img class="is-rounded minha-foto" src="/images/rapha.png" alt="Minha Foto">
+            <img class="is-rounded minha-foto" src="/images/raphs.jpeg" alt="Minha Foto">
           </figure>
 
         </div>
         <div class="column">
           <div class="content box sobre-box">
             <h1 class="has-text-white has-text-weight-semibold is-size-4 mb-3">Olá, eu sou a Raphaela! </h1>
-            <p class="has-text-light is-size-5">
-              Atualmente faço o curso superior em Análise e Desenvolvimento de Sistemas pela FATEC - Prof. Jessen Vidal,
-              com formação técnica em Desenvolvimento de Sistemas
+            <p class="has-text-light is-size-15">
+              Sou estudante de <b>Análise e Desenvolvimento de Sistemas pela FATEC - Professor Jessen Vidal</b>, com
+              formação técnica em Desenvolvimento de Sistemas
               pela ETEC - Machado de Assis.
               <br>
-              Tenho uma base sólida em desenvolvimento web, banco de dados e análise de dados. Ao longo da minha
-              trajetória
-              acadêmica, desenvolvi competências em tecnologias como HTML, CSS, JavaScript, Python, Java e SQL. Além
-              disso, busco
-              constantemente aprimorar minhas habilidades em design de interfaces e na criação de soluções tecnológicas
-              inovadoras.
-              <br>
+
               Sou apaixonada por aprender e tenho facilidade em me adaptar a novas ferramentas e metodologias. No
               trabalho em equipe,
               me destaco pela organização, atenção aos detalhes e comprometimento com os prazos e objetivos. Estou
@@ -98,10 +123,10 @@
           <div class="social-icons mt-4">
             <a href="https://www.linkedin.com/in/raphaelamonteiro" target="_blank"
               class="button is-rounded is-link is-medium">
-              <i class="devicon-linkedin-plain"></i>
+              <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://github.com/raphaelamonteiro" target="_blank" class="button is-rounded is-link is-medium">
-              <i class="devicon-github-original"></i>
+              <i class="fab fa-github"></i>
             </a>
 
           </div>
@@ -109,6 +134,50 @@
       </div>
     </div>
   </section>
+<!-- Habilidades -->
+<section id="skills" class="section has-background-black contact-section">
+  <div class="container has-text-centered">
+    <h2 class="title has-text-white is-3">Minhas Habilidades</h2>
+
+    <!-- Front-End -->
+    <div class="tags are-large is-justify-content-center">
+      <span class="tag is-link"><i class="devicon-html5-plain"></i>&nbsp; HTML</span>
+      <span class="tag is-link"><i class="devicon-css3-plain"></i>&nbsp; CSS</span>
+      <span class="tag is-link"><i class="devicon-bulma-plain"></i>&nbsp; Bulma</span>
+      <span class="tag is-link"><i class="devicon-bootstrap-plain"></i>&nbsp; Bootstrap</span>
+      <span class="tag is-link"><i class="devicon-materialui-plain"></i>&nbsp; Material UI</span>
+      <span class="tag is-link"><i class="devicon-javascript-plain"></i>&nbsp; JavaScript</span>
+      <span class="tag is-link"><i class="devicon-typescript-plain"></i>&nbsp; TypeScript</span>
+      <span class="tag is-link"><i class="devicon-react-plain"></i>&nbsp; React</span>
+      <span class="tag is-link"><i class="devicon-angular-plain"></i>&nbsp; Angular</span>
+    </div>
+
+    <!-- Back-End -->
+    <div class="tags are-large is-justify-content-center">
+      <span class="tag is-link"><i class="devicon-nodejs-plain"></i>&nbsp; Node</span>
+      <span class="tag is-link"><i class="devicon-express-original"></i>&nbsp; Express</span>
+      <span class="tag is-link"><i class="devicon-java-plain"></i>&nbsp; Java</span>
+      <span class="tag is-link"><i class="devicon-csharp-plain"></i>&nbsp; C Sharp</span>
+      <span class="tag is-link"><i class="devicon-dotnetcore-plain"></i>&nbsp; .NET</span>
+      <span class="tag is-link"><i class="devicon-python-plain"></i>&nbsp; Python</span>
+      <span class="tag is-link"><i class="devicon-flask-plain"></i>&nbsp; Flask</span>
+    </div>
+
+    <!-- Banco de Dados -->
+    <div class="tags are-large is-justify-content-center">
+      <span class="tag is-link"><i class="devicon-mysql-plain"></i>&nbsp; MySQL</span>
+      <span class="tag is-link"><i class="devicon-postgresql-plain"></i>&nbsp; PostgreSQL</span>
+    </div>
+
+    <!-- Ferramentas & Outros -->
+    <div class="tags are-large is-justify-content-center">
+      <span class="tag is-link"><i class="devicon-figma-plain"></i>&nbsp; Figma</span>
+      <span class="tag is-link"><i class="devicon-git-plain"></i>&nbsp; Git</span>
+      <span class="tag is-link"><i class="devicon-linux-plain"></i>&nbsp; Linux</span>
+    </div>
+  </div>
+</section>
+
 
 
   <!-- Projetos -->
@@ -120,7 +189,7 @@
           <div class="column is-6-tablet is-4-desktop">
             <div class="card is-flex is-flex-direction-column" style="height: 100%;">
               <div class="card-image">
-                <figure class="image aspect-1512x982">
+                <figure class="image aspect-1920x1080">
                   <img src="<%= projeto.imagem %>" alt="Imagem do projeto">
                 </figure>
               </div>
@@ -141,7 +210,7 @@
 
                   <div class="tags mt-3">
                     <% projeto.tecnologias.forEach(tec=> { %>
-                      <span class="tag is-info is-light">
+                      <span class="tag is-link is-dark">
                         <%= tec %>
                       </span>
                       <% }); %>
@@ -150,16 +219,20 @@
                   <div class="buttons is-flex is-justify-content-space-between mt-4" style="border-top: none;">
 
                     <p>
-                      <a href="<%= projeto.github %>" class="button is-small is-link is-light is-rounded"
+                      <a href="<%= projeto.github %>" class="button is-small is-link is-dark is-rounded"
                         target="_blank">
-                        <i class="devicon-github-original"></i>&nbsp; Acessar GitHub
+                        <i class="fab fa-github"></i>&nbsp; Acessar GitHub
                       </a>
 
-                      <a href="<%= projeto.video %>" class="button is-small is-link is-light is-rounded"
-                        target="_blank">
-                        <span class="material-symbols-outlined">play_arrow</span>
+                      <a href="<%= projeto.video %>" class="button is-small is-link is-dark is-rounded" target="_blank">
+                        <i class="fa-solid fa-video"></i>
                         &nbsp; Vídeo de Demonstração
                       </a>
+
+                      <a class="button is-small is-link is-dark is-rounded" onclick="openModal('<%= projeto.id %>')">
+                        Ver mais
+                      </a>
+
 
                     </p>
                   </div>
@@ -171,59 +244,102 @@
       </div>
     </div>
   </section>
-
-  <!-- Contato -->
-  <section class="section" id="contato">
-    <div class="container">
-      <h2 class="title has-text-centered has-text-purple">Contato</h2>
-      <div class="box">
-        <form action="#">
-          <div class="field">
-            <label class="label has-text-white">Nome</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Seu nome">
-            </div>
+  <!-- Modais de Projetos -->
+  <% projetos.forEach(projeto=> { %>
+    <div id="modal-<%= projeto.id %>" class="modal">
+      <div class="modal-background" onclick="closeModal('<%= projeto.id %>')"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">
+            <%= projeto.titulo %>
+          </p>
+          <button class="delete" aria-label="close" onclick="closeModal('<%= projeto.id %>')"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="modal-body content has-text-left">
+            <%- projeto.descricaoDetalhada %>
           </div>
 
-          <div class="field">
-            <label class="label has-text-white">Email</label>
-            <div class="control">
-              <input class="input" type="email" placeholder="seu@email.com">
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label has-text-white">Mensagem</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Digite sua mensagem..."></textarea>
-            </div>
-          </div>
-
-          <div class="control has-text-centered">
-            <button class="button is-primary is-rounded">Enviar</button>
-          </div>
-        </form>
+          <!-- Adicione imagens, links ou vídeos se quiser -->
+        </section>
+        <footer class="modal-card-foot">
+          <% if (projeto.github) { %>
+            <a href="<%= projeto.github %>" class="button is-link" target="_blank">GitHub</a>
+            <% } %>
+              <% if (projeto.video) { %>
+                <a href="<%= projeto.video %>" class="button is-light" target="_blank">Vídeo</a>
+                <% } %>
+                  <button class="button" onclick="closeModal('<%= projeto.id %>')">Fechar</button>
+        </footer>
       </div>
     </div>
-  </section>
+    <% }); %>
 
-  <!-- Footer -->
-  <footer class="footer has-text-white has-text-centered">
-    <p>&copy; 2025 Raphaela Monteiro - Todos os direitos reservados</p>
-  </footer>
 
-  <!-- Script do navbar burger -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const burger = document.querySelector('.navbar-burger');
-      const menu = document.getElementById(burger.dataset.target);
+      <!-- Contato -->
+      <section id="contato" class="section has-background-black contact-section">
+        <div class="container has-text-centered">
+          <h2 class="title has-text-white is-3">Gostou do meu trabalho?</h2>
+          <p class="subtitle has-text-grey-light mb-6">Entre em contato ou acompanhe nas redes sociais:</p>
 
-      burger.addEventListener('click', () => {
-        burger.classList.toggle('is-active');
-        menu.classList.toggle('is-active');
-      });
-    });
-  </script>
+          <div class="buttons is-centered contact-buttons">
+            <a href="https://www.linkedin.com/in/raphaelamonteiro/?locale=en_US" target="_blank"
+              class="button is-dark is-rounded is-medium contact-button">
+              <span class="icon"><i class="fab fa-linkedin"></i></span>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/raphaelamonteiro" target="_blank"
+              class="button is-dark is-rounded is-medium contact-button">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:raphaelabm.dev@gmail.com" class="button is-dark is-rounded is-medium contact-button">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span>Email</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="footer has-text-centered">
+        <div class="content">
+          <p class="footer-text">
+            &copy; 2025 - Raphaela Monteiro
+            <br> Todos os direitos reservados
+          </p>
+
+          <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/raphaelamonteiro" target="_blank" class="footer-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/raphaelamonteiro" target="_blank" class="footer-icon">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:raphaelabm.dev@gmail.com" class="footer-icon">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+            </a>
+          </div>
+
+        </div>
+      </footer>
+
+
+
+      <!-- Script do navbar burger -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const burger = document.querySelector('.navbar-burger');
+          const menu = document.getElementById(burger.dataset.target);
+
+          burger.addEventListener('click', () => {
+            burger.classList.toggle('is-active');
+            menu.classList.toggle('is-active');
+          });
+        });
+      </script>
+
+
 </body>
 
 </html>
