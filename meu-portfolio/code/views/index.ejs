@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raphaela Monteiro - Portfólio</title>
 
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
   <!-- Bulma CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
@@ -134,13 +137,14 @@
       </div>
     </div>
   </section>
+
 <!-- Habilidades -->
-<section id="skills" class="section has-background-black contact-section">
+<section id="skills" class="section has-background-black skills-section">
   <div class="container has-text-centered">
     <h2 class="title has-text-white is-3">Minhas Habilidades</h2>
 
     <!-- Front-End -->
-    <div class="tags are-large is-justify-content-center">
+    <div class="tags are-medium is-justify-content-center">
       <span class="tag is-link"><i class="devicon-html5-plain"></i>&nbsp; HTML</span>
       <span class="tag is-link"><i class="devicon-css3-plain"></i>&nbsp; CSS</span>
       <span class="tag is-link"><i class="devicon-bulma-plain"></i>&nbsp; Bulma</span>
@@ -153,7 +157,7 @@
     </div>
 
     <!-- Back-End -->
-    <div class="tags are-large is-justify-content-center">
+    <div class="tags are-medium is-justify-content-center">
       <span class="tag is-link"><i class="devicon-nodejs-plain"></i>&nbsp; Node</span>
       <span class="tag is-link"><i class="devicon-express-original"></i>&nbsp; Express</span>
       <span class="tag is-link"><i class="devicon-java-plain"></i>&nbsp; Java</span>
@@ -164,13 +168,13 @@
     </div>
 
     <!-- Banco de Dados -->
-    <div class="tags are-large is-justify-content-center">
+    <div class="tags are-medium is-justify-content-center">
       <span class="tag is-link"><i class="devicon-mysql-plain"></i>&nbsp; MySQL</span>
       <span class="tag is-link"><i class="devicon-postgresql-plain"></i>&nbsp; PostgreSQL</span>
     </div>
 
     <!-- Ferramentas & Outros -->
-    <div class="tags are-large is-justify-content-center">
+    <div class="tags are-medium is-justify-content-center">
       <span class="tag is-link"><i class="devicon-figma-plain"></i>&nbsp; Figma</span>
       <span class="tag is-link"><i class="devicon-git-plain"></i>&nbsp; Git</span>
       <span class="tag is-link"><i class="devicon-linux-plain"></i>&nbsp; Linux</span>
@@ -244,6 +248,7 @@
       </div>
     </div>
   </section>
+ 
   <!-- Modais de Projetos -->
   <% projetos.forEach(projeto=> { %>
     <div id="modal-<%= projeto.id %>" class="modal">
@@ -259,15 +264,18 @@
           <div class="modal-body content has-text-left">
             <%- projeto.descricaoDetalhada %>
           </div>
-
-          <!-- Adicione imagens, links ou vídeos se quiser -->
+          <!-- Aqui você pode adicionar imagens, links, vídeos etc -->
         </section>
         <footer class="modal-card-foot">
           <% if (projeto.github) { %>
-            <a href="<%= projeto.github %>" class="button is-link" target="_blank">GitHub</a>
+            <a href="<%= projeto.github %>" class="button is-link" target="_blank">
+              <i class="fab fa-github"></i>&nbsp; GitHub
+            </a>
             <% } %>
               <% if (projeto.video) { %>
-                <a href="<%= projeto.video %>" class="button is-light" target="_blank">Vídeo</a>
+                <a href="<%= projeto.video %>" class="button is-light" target="_blank">
+                  <i class="fas fa-video"></i>&nbsp; Vídeo
+                </a>
                 <% } %>
                   <button class="button" onclick="closeModal('<%= projeto.id %>')">Fechar</button>
         </footer>

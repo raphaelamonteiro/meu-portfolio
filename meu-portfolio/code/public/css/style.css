@@ -1,9 +1,13 @@
-/* 🌐 Rolagem suave ao clicar nos links de navegação */
+/* ==============================
+   🌐 Rolagem suave
+   ============================== */
 html {
     scroll-behavior: smooth;
 }
 
-/* 🌙 Estilo geral do corpo da página */
+/* ==============================
+   🌙 Estilo geral do body
+   ============================== */
 body {
     background-color: #070F2B;
     /* Fundo roxo escuro */
@@ -13,33 +17,33 @@ body {
     line-height: 1.6;
 }
 
-/* 🧭 Navbar */
+/* ==============================
+   🧭 Navbar
+   ============================== */
 nav.navbar {
     background-color: #7a5af5 !important;
-    /* Fundo da navbar */
 }
 
 nav.navbar .navbar-item {
     color: #d1c4e9 !important;
-    /* Cor dos itens */
 }
 
 nav.navbar .navbar-item:hover {
     background-color: #5e3ea1 !important;
-    /* Hover com roxo mais escuro */
     color: #fff !important;
-    /* Texto branco ao passar o mouse */
 }
 
-
-/* 🟪 Seção Hero com degradê escuro */
+/* ==============================
+   🟪 Hero section
+   ============================== */
 .hero {
     background: linear-gradient(to right, #1a102b, #2a1850);
-    /* Degradê horizontal */
     color: #ffffff;
 }
 
-/* 🎯 Botões principais estilo roxo escuro */
+/* ==============================
+   🎯 Botões principais
+   ============================== */
 .button.is-link {
     background-color: #17153B;
     border-color: #7c3aed;
@@ -52,7 +56,9 @@ nav.navbar .navbar-item:hover {
     border-color: #a78bfa;
 }
 
-/* 🎨 Cores utilitárias customizadas */
+/* ==============================
+   🎨 Cores utilitárias
+   ============================== */
 .has-text-purple-light {
     color: #a78bfa;
 }
@@ -61,7 +67,9 @@ nav.navbar .navbar-item:hover {
     color: #b794f4 !important;
 }
 
-/* 🧾 Seção Sobre */
+/* ==============================
+   🧾 Seção Sobre
+   ============================== */
 #sobre {
     padding: 3rem 1.5rem;
     border-radius: 12px;
@@ -84,18 +92,17 @@ nav.navbar .navbar-item:hover {
     color: #a78bfa;
 }
 
-/* 💼 Box da seção Sobre com efeito glassmorphism */
 .sobre-box {
     background-color: rgba(0, 0, 0, 0.3);
-    /* Fundo escuro transparente */
     border: 1px solid #7c3aed;
-    border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(6px);
 }
 
-/* 🌐 Ícones sociais */
+/* ==============================
+   🌐 Ícones sociais
+   ============================== */
 .social-icons .button {
     margin: 0 0.25rem;
     transition: transform 0.2s ease;
@@ -103,15 +110,24 @@ nav.navbar .navbar-item:hover {
 
 .social-icons .button:hover {
     transform: scale(1.15);
-    /* Aumenta o botão ao passar o mouse */
     border-radius: 100rem;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
-/* 🖼️ Estilo da foto */
+/* ==============================
+   🖼️ Estilo da foto
+   ============================== */
 .minha-foto {
     border: 3px solid #7c3aed;
     box-shadow: 0 0 12px rgba(124, 58, 237, 0.6);
+}
+
+/* ==============================
+   📬 Seção de habilidades
+   ============================== */
+.skills-section {
+    background: linear-gradient(145deg, #0e0e2e, #1f1f3f);
+    padding: 4rem 2rem;
 }
 
 .skills-container {
@@ -119,50 +135,49 @@ nav.navbar .navbar-item:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.5rem;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .skills-container .tag {
     margin: 0.05rem;
 }
+
 .tags {
     flex-wrap: wrap;
     gap: 0.002rem;
 }
 
-
-/* 📦 Estilo dos cards e boxes */
+/* ==============================
+   📦 Cards e Boxes
+   ============================== */
 .box,
 .card {
     background: rgba(30, 30, 47, 0.6);
-    /* Fundo roxo escuro com transparência */
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     color: #E0D8F6;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Animação de elevação ao passar o mouse */
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
-/* Remove o fundo do rodapé do card */
 .card-footer {
     border-top: none !important;
     background: transparent;
     padding-top: 0.5rem;
 }
 
-/* 📺 Estilo responsivo para vídeos (ex: YouTube embed) */
+/* ==============================
+   📺 Vídeos responsivos
+   ============================== */
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    /* Proporção 16:9 */
     height: 0;
     overflow: hidden;
     border-radius: 12px;
@@ -177,7 +192,52 @@ nav.navbar .navbar-item:hover {
     height: 100%;
 }
 
-/* 📷 Estilo para imagens com proporção fixa */
+/* ==============================
+   💫 Modais
+   ============================== */
+.modal-card {
+    background-color: #121225;
+    color: #e0e0ff;
+    border: 1px solid #4D55CC;
+    border-radius: 8px;
+    box-shadow: 0 0 3px #4D55CC;
+}
+
+.modal-card-head,
+.modal-card-foot {
+    background-color: #1a1a33;
+    border-color: #4D55CC;
+}
+
+.modal-card-title {
+    color: #b794f4;
+    font-weight: bold;
+    text-shadow: 0 0 2px #666cff;
+}
+
+.modal-card-body {
+    background-color: #121225;
+}
+
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal .button {
+    background-color: #4D55CC;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 3px #4D55CC;
+}
+
+.modal .button:hover {
+    background-color: #666cff;
+    box-shadow: 0 0 7px #8d93ff;
+}
+
+/* ==============================
+   📷 Proporção fixa de imagem
+   ============================== */
 .aspect-1512x982 {
     aspect-ratio: 1512 / 982;
     overflow: hidden;
@@ -190,7 +250,9 @@ nav.navbar .navbar-item:hover {
     object-fit: cover;
 }
 
-/* ✨ Hero customizado com imagem de fundo e overlay */
+/* ==============================
+   ✨ Hero com imagem e overlay
+   ============================== */
 .hero-custom {
     background-size: cover;
     background-position: center;
@@ -207,20 +269,19 @@ nav.navbar .navbar-item:hover {
     width: 100%;
     height: 100%;
     background: rgba(10, 10, 10, 0.6);
-    /* Camada escura por cima da imagem */
     z-index: -1;
 }
 
-/* 📬 Seção de contato com estilo moderno */
+/* ==============================
+   📬 Seção de contato
+   ============================== */
 .contact-section {
     background: linear-gradient(145deg, #0e0e2e, #1f1f3f);
-    /* Degradê escuro */
     padding: 5rem 1.5rem;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
 }
 
-/* Botões da seção de contato */
 .contact-buttons .contact-button {
     margin: 0.5rem;
     background-color: #2e2e6f;
@@ -235,23 +296,22 @@ nav.navbar .navbar-item:hover {
     transform: translateY(-2px);
 }
 
-/* 🦶 Rodapé com degradê roxo */
+/* ==============================
+   🦶 Rodapé
+   ============================== */
 .footer {
     background: linear-gradient(to right, #5e3ea1, #7a5af5);
     padding: 2rem 1rem;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-
 }
 
-/* Texto principal do rodapé */
 .footer-text {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     color: #f3e8ff;
 }
 
-/* Container de ícones sociais do rodapé */
 .footer-icons {
     display: flex;
     justify-content: center;
@@ -259,7 +319,6 @@ nav.navbar .navbar-item:hover {
     margin-bottom: 1rem;
 }
 
-/* Estilo dos ícones */
 .footer-icon {
     font-size: 2rem;
     color: #ffffff;
@@ -268,12 +327,10 @@ nav.navbar .navbar-item:hover {
 
 .footer-icon:hover {
     transform: scale(1);
-    /* Pode ajustar pra 1.15 se quiser animar */
     color: #d1c4e9;
 }
 
-/* Texto de direitos autorais */
 .footer-copy {
     font-size: 0.9rem;
     color: #e0d6f9;
-} 
+}
