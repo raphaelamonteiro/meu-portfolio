@@ -2,8 +2,11 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+// Configurações iniciais
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.get('/', (req, res) => {
 const projetos = [
@@ -93,6 +96,9 @@ const projetos = [
   res.render('index', { projetos });
 });
 
-app.listen(3000, () => {
-  console.log('Servidor rodando em http://localhost:3000');
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
+
