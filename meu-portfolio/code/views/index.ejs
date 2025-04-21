@@ -6,25 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raphaela Monteiro - Portfólio</title>
 
-<!--Fonte - Ubuntu-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-  rel="stylesheet">
+  <!--Fonte - Ubuntu-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
 
-<!-- Ícone SVG para navegadores modernos -->
-<link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg">
+  <!-- Ícone SVG para navegadores modernos -->
+  <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg">
 
-<!-- Ícone PNG para navegadores que não suportam SVG -->
-<link rel="icon" type="image/png" sizes="192x192" href="/favicons/web-app-manifest-192x192.png">
+  <!-- Ícone PNG para navegadores que não suportam SVG -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/web-app-manifest-192x192.png">
 
-<!-- Configurações adicionais -->
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="theme-color" content="#ffffff">
+  <!-- Configurações adicionais -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
 
-<!-- Bulma CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
   <!-- Ícones e fontes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -42,9 +42,8 @@
   function closeModal(id) {
     document.getElementById('modal-' + id).classList.remove('is-active');
   }
-</script>
 
-<script>
+  //Script do navbar burger
   document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.navbar-burger');
     const menu = document.getElementById(burger.dataset.target);
@@ -77,7 +76,6 @@
       <div class="navbar-end is-link">
         <a class="navbar-item" href="#sobre">Sobre</a>
         <a class="navbar-item" href="#skills">Habilidades</a>
-        <a class="navbar-item" href="#certificados">Certificações</a>
         <a class="navbar-item" href="#projetos">Projetos</a>
         <a class="navbar-item" href="#contato">Contato</a>
       </div>
@@ -86,25 +84,26 @@
 
 
   <!-- Hero -->
-<section class="hero is-fullheight has-text-white custom-hero">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h2 class="title is-1 has-text-purple-light">&lt; Apaixonada por tecnologia, guiada pela inovação /&gt;</h2>
-      <h3 class="subtitle is-4 has-text-grey-lighter">Busco evoluir diariamente, explorando novas ferramentas, tendências e formas de criar soluções que acompanham um mundo
-      em constante transformação.</h3>
+  <section class="hero is-fullheight has-text-white custom-hero">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h2 class="title is-1 has-text-purple-light">&lt; Apaixonada por tecnologia, guiada pela inovação /&gt;</h2>
+        <h3 class="subtitle is-4 has-text-grey-lighter">Busco evoluir diariamente, explorando novas ferramentas,
+          tendências e formas de criar soluções que acompanham um mundo
+          em constante transformação.</h3>
 
-      <div class="buttons is-centered mt-5">
-        <a href="#projetos" class="button is-link is-medium is-rounded has-text-weight-semibold">
-          Ver Projetos</a>
-        <a href="/cv/Curriculo - Raphaela.pdf" download
-          class="button is-link is-medium is-rounded has-text-weight-semibold">
-          <i class="fa-solid fa-file-arrow-down"></i>
-          &nbsp;Download CV
-        </a>
+        <div class="buttons is-centered mt-5">
+          <a href="#projetos" class="button is-link is-medium is-rounded has-text-weight-semibold">
+            Ver Projetos</a>
+          <a href="/cv/Curriculo - Raphaela.pdf" download
+            class="button is-link is-medium is-rounded has-text-weight-semibold">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            &nbsp; Baixar Currículo
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Sobre -->
   <section class="section" id="sobre">
@@ -124,21 +123,23 @@
           <div class="content box sobre-box">
             <h1 class="has-text-white has-text-weight-semibold is-size-4 mb-3">Olá, sou Raphaela Monteiro!</h1>
             <p class="has-text-light is-size-15">
-            Estudante de Análise e Desenvolvimento de Sistemas, dedicada a construir soluções tecnológicas
-            que combinam eficiência, organização e foco no usuário. 
-            <br>
-            Desde o início da minha trajetória acadêmica, encaro cada
-            projeto como uma oportunidade real de aplicar boas práticas e aprimorar minhas habilidades técnicas.
-            <br>
-            Tenho conhecimento em desenvolvimento web, Java, JavaScript e bancos de dados, e cultivo uma mentalidade profissional
-            voltada para a clareza no código, trabalho em equipe e resolução de problemas de forma estruturada. Busco sempre me
-            manter atualizada, não apenas com novas ferramentas, mas com as necessidades do mercado e as demandas reais dos
-            projetos.
-            <br>
-            Com responsabilidade, comprometimento e visão de crescimento, estou pronta para colaborar com equipes que valorizam
-            inovação, aprendizado contínuo e entregas de qualidade.
-              
-            </p>
+  Sou estudante de Análise e Desenvolvimento de Sistemas, movida pelo desejo de criar soluções tecnológicas que unam
+  eficiência, organização e foco total na experiência do usuário.
+  <br>
+  Desde pequena, tenho uma paixão por ciência e inovação — valores que hoje guiam minha trajetória acadêmica e
+  profissional. Vejo cada projeto como uma oportunidade de aplicar boas práticas, desafiar meus limites e evoluir
+  tecnicamente.
+  <br>
+  Ao longo da minha formação, desenvolvi um sólido conhecimento em desenvolvimento de software, aliado a uma mentalidade
+  profissional que valoriza clareza no código, trabalho em equipe e resolução de problemas com lógica e estrutura.
+  <br>
+  Estou constantemente me atualizando, não só em relação a novas ferramentas e tecnologias, mas também buscando entender
+  as reais demandas do mercado e dos usuários.
+  <br>
+  Com responsabilidade, comprometimento e visão de crescimento, estou pronta para contribuir com times que valorizem
+  inovação, aprendizado contínuo e entregas que façam a diferença.
+</p>
+
           </div>
           <div class="social-icons mt-4">
             <a href="https://www.linkedin.com/in/raphaelamonteiro" target="_blank"
@@ -148,6 +149,10 @@
             <a href="https://github.com/raphaelamonteiro" target="_blank" class="button is-rounded is-link is-medium">
               <i class="fab fa-github"></i>
             </a>
+            <a href="/cv/Curriculo - Raphaela.pdf" download class="button is-rounded is-link is-medium has-text-weight-semibold">
+              <i class="fa-regular fa-circle-down"></i>
+              &nbsp; Currículo
+            </a>
 
           </div>
         </div>
@@ -155,217 +160,217 @@
     </div>
   </section>
 
-<!-- Habilidades -->
-<section id="skills" class="section has-background-black skills-section">
-  <div class="container has-text-centered">
-    <h2 class="title has-text-white is-3">Minhas Habilidades</h2>
+  <!-- Habilidades -->
+  <section id="skills" class="section has-background-black skills-section">
+    <div class="container has-text-centered">
+      <h2 class="title has-text-white is-3">Minhas Habilidades</h2>
 
-    <!-- Front-End -->
-    <div class="tags are-medium is-justify-content-center">
-      <span class="tag is-custom"><i class="fa-brands fa-html5"></i>&nbsp; HTML</span>
-      <span class="tag is-custom"><i class="devicon-css3-plain"></i>&nbsp; CSS</span>
-      <span class="tag is-custom"><i class="devicon-bulma-plain"></i>&nbsp; Bulma</span>
-      <span class="tag is-custom"><i class="devicon-bootstrap-plain"></i>&nbsp; Bootstrap</span>
-      <span class="tag is-custom"><i class="devicon-materialui-plain"></i>&nbsp; Material UI</span>
-      <span class="tag is-custom"><i class="fa-brands fa-square-js"></i>&nbsp; JavaScript</span>
-      <span class="tag is-custom"><i class="devicon-typescript-plain"></i>&nbsp; TypeScript</span>
-      <span class="tag is-custom"><i class="fa-brands fa-react"></i>&nbsp; React</span>
-      <span class="tag is-custom"><i class="devicon-angular-plain"></i>&nbsp; Angular</span>
-    </div>
+      <!-- Front-End -->
+      <div class="tags are-medium is-justify-content-center">
+        <span class="tag is-custom"><i class="fa-brands fa-html5"></i>&nbsp; HTML</span>
+        <span class="tag is-custom"><i class="devicon-css3-plain"></i>&nbsp; CSS</span>
+        <span class="tag is-custom"><i class="devicon-bulma-plain"></i>&nbsp; Bulma</span>
+        <span class="tag is-custom"><i class="devicon-bootstrap-plain"></i>&nbsp; Bootstrap</span>
+        <span class="tag is-custom"><i class="devicon-materialui-plain"></i>&nbsp; Material UI</span>
+        <span class="tag is-custom"><i class="fa-brands fa-square-js"></i>&nbsp; JavaScript</span>
+        <span class="tag is-custom"><i class="devicon-typescript-plain"></i>&nbsp; TypeScript</span>
+        <span class="tag is-custom"><i class="fa-brands fa-react"></i>&nbsp; React</span>
+        <span class="tag is-custom"><i class="fa-brands fa-angular"></i>&nbsp; Angular</span>
+      </div>
 
-    <!-- Back-End -->
-    <div class="tags are-medium is-justify-content-center">
-      <span class="tag is-custom"><i class="fa-brands fa-node-js"></i>&nbsp; Node</span>
-      <span class="tag is-custom"><i class="devicon-express-original"></i>&nbsp; Express</span>
-      <span class="tag is-custom"><i class="fa-brands fa-java"></i>&nbsp; Java</span>
-      <span class="tag is-custom"><i class="devicon-csharp-plain"></i>&nbsp; C Sharp</span>
-      <span class="tag is-custom"><i class="devicon-dotnetcore-plain"></i>&nbsp; .NET</span>
-      <span class="tag is-custom"><i class="fa-brands fa-php"></i>&nbsp; PHP</span>
-      <span class="tag is-custom"><i class="fa-brands fa-python"></i>&nbsp; Python</span>
-      <span class="tag is-custom"><i class="devicon-flask-plain"></i>&nbsp; Flask</span>
-    </div>
+      <!-- Back-End -->
+      <div class="tags are-medium is-justify-content-center">
+        <span class="tag is-custom"><i class="fa-brands fa-node-js"></i>&nbsp; Node</span>
+        <span class="tag is-custom"><i class="devicon-express-original"></i>&nbsp; Express</span>
+        <span class="tag is-custom"><i class="fa-brands fa-java"></i>&nbsp; Java</span>
+        <span class="tag is-custom"><i class="devicon-csharp-plain"></i>&nbsp; C Sharp</span>
+        <span class="tag is-custom"><i class="devicon-dotnetcore-plain"></i>&nbsp; .NET</span>
+        <span class="tag is-custom"><i class="fa-brands fa-php"></i>&nbsp; PHP</span>
+        <span class="tag is-custom"><i class="fa-brands fa-python"></i>&nbsp; Python</span>
+        <span class="tag is-custom"><i class="devicon-flask-plain"></i>&nbsp; Flask</span>
+      </div>
 
-    <!-- Banco de Dados -->
-    <div class="tags are-medium is-justify-content-center">
-      <span class="tag is-custom"><i class="devicon-mysql-plain"></i>&nbsp; MySQL</span>
-      <span class="tag is-custom"><i class="devicon-postgresql-plain"></i>&nbsp; PostgreSQL</span>
-    </div>
+      <!-- Banco de Dados -->
+      <div class="tags are-medium is-justify-content-center">
+        <span class="tag is-custom"><i class="devicon-mysql-plain"></i>&nbsp; MySQL</span>
+        <span class="tag is-custom"><i class="devicon-postgresql-plain"></i>&nbsp; PostgreSQL</span>
+      </div>
 
-    <!-- Ferramentas & Outros -->
-    <div class="tags are-medium is-justify-content-center">
-      <span class="tag is-custom"><i class="fa-brands fa-jira"></i>&nbsp; Jira</span>
-      <span class="tag is-custom"><i class="fa-brands fa-bitbucket"></i>&nbsp; Bitbucket</span>
-      <span class="tag is-custom"><i class="devicon-git-plain"></i>&nbsp; Git</span>
-      <span class="tag is-custom"><i class="fa-brands fa-figma"></i>&nbsp; Figma</span>
-      <span class="tag is-custom"><i class="fa-brands fa-linux"></i>&nbsp; Linux</span>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Projetos -->
-  <section class="section projetos-section" id="projetos">
-    <div class="container">
-      <h2 class="title has-text-centered has-text-purple">Meus Projetos</h2>
-      <div class="columns is-multiline">
-        <% projetos.forEach(projeto=> { %>
-          <div class="column is-6-tablet is-4-desktop">
-            <div class="card is-flex is-flex-direction-column" style="height: 100%;">
-              <div class="card-image">
-                <figure class="image aspect-1920x1080">
-                  <img src="<%= projeto.imagem %>" alt="Imagem do projeto">
-                </figure>
-              </div>
-
-              <div class="card-content is-flex-grow-1">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-5 has-text-purple">
-                      <%= projeto.titulo %>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="content">
-                  <p>
-                    <%= projeto.descricao %>
-                  </p>
-
-                  <div class="tags mt-3">
-                    <% projeto.tecnologias.forEach(tec=> { %>
-                      <span class="tag is-link is-dark">
-                        <%= tec %>
-                      </span>
-                      <% }); %>
-                  </div>
-
-                  <div class="buttons is-flex is-justify-content-space-between mt-4" style="border-top: none;">
-
-                    <p>
-                      <a href="<%= projeto.github %>" class="button is-small is-link is-dark is-rounded"
-                        target="_blank">
-                        <i class="fab fa-github"></i>&nbsp; Acessar GitHub
-                      </a>
-
-                      <a href="<%= projeto.video %>" class="button is-small is-link is-dark is-rounded" target="_blank">
-                        <i class="fa-solid fa-video"></i>
-                        &nbsp; Vídeo de Demonstração
-                      </a>
-
-                      <a class="button is-small is-link is-dark is-rounded" onclick="openModal('<%= projeto.id %>')">
-                        Ver mais
-                      </a>
-
-
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <% }); %>
+      <!-- Ferramentas & Outros -->
+      <div class="tags are-medium is-justify-content-center">
+        <span class="tag is-custom"><i class="fa-brands fa-jira"></i>&nbsp; Jira</span>
+        <span class="tag is-custom"><i class="fa-brands fa-bitbucket"></i>&nbsp; Bitbucket</span>
+        <span class="tag is-custom"><i class="devicon-git-plain"></i>&nbsp; Git</span>
+        <span class="tag is-custom"><i class="fa-brands fa-figma"></i>&nbsp; Figma</span>
+        <span class="tag is-custom"><i class="fa-brands fa-linux"></i>&nbsp; Linux</span>
       </div>
     </div>
   </section>
- 
-  <!-- Modais de Projetos -->
-  <% projetos.forEach(projeto=> { %>
-    <div id="modal-<%= projeto.id %>" class="modal">
-      <div class="modal-background" onclick="closeModal('<%= projeto.id %>')"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">
-            <%= projeto.titulo %>
-          </p>
-          <button class="delete" aria-label="close" onclick="closeModal('<%= projeto.id %>')"></button>
-        </header>
-        <section class="modal-card-body">
-          <div class="modal-body content has-text-left">
-            <%- projeto.descricaoDetalhada %>
-          </div>
-          <!-- Aqui você pode adicionar imagens, links, vídeos etc -->
-        </section>
-        <footer class="modal-card-foot">
-          <% if (projeto.github) { %>
-            <a href="<%= projeto.github %>" class="button is-link" target="_blank">
-              <i class="fab fa-github"></i>&nbsp; GitHub
-            </a>
-            <% } %>
-              <% if (projeto.video) { %>
-                <a href="<%= projeto.video %>" class="button is-light" target="_blank">
-                  <i class="fas fa-video"></i>&nbsp; Vídeo
-                </a>
-                <% } %>
-        </footer>
-      </div>
+
+<!--Experiencias
+<section class="section" id="experiencia">
+  <div class="container">
+    <h2 class="title has-text-centered has-text-purple">Experiência Profissional</h2>
+    <div class="content box has-text-light">
+      <p><b>Desenvolvedora Freelance</b> (Fev/2025 - Atual)</p>
+      <p>Desenvolvimento de aplicações web sob demanda utilizando Node.js, React e PostgreSQL. Responsável por todo o
+        ciclo de vida dos projetos, desde o planejamento até a entrega final.</p>
     </div>
-    <% }); %>
+    <!-- Adicione mais experiências ou estágios se quiser
+  </div>
+</section-->
 
 
-      <!-- Contato -->
-      <section id="contato" class="section has-background-black contact-section">
-        <div class="container has-text-centered">
-          <h2 class="title has-text-white is-3">Gostou do meu trabalho?</h2>
-          <p class="subtitle has-text-grey-light mb-6">Entre em contato ou acompanhe nas redes sociais:</p>
 
-          <div class="buttons is-centered contact-buttons">
-            <a href="https://www.linkedin.com/in/raphaelamonteiro/?locale=en_US" target="_blank"
-              class="button is-dark is-rounded is-medium contact-button">
-              <span class="icon"><i class="fab fa-linkedin"></i></span>
-              <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/raphaelamonteiro" target="_blank"
-              class="button is-dark is-rounded is-medium contact-button">
-              <span class="icon"><i class="fab fa-github"></i></span>
-              <span>GitHub</span>
-            </a>
-            <a href="mailto:raphaelabm.dev@gmail.com" class="button is-dark is-rounded is-medium contact-button">
-              <span class="icon"><i class="fas fa-envelope"></i></span>
-              <span>Email</span>
-            </a>
+      <!-- Projetos -->
+      <section class="section projetos-section" id="projetos">
+        <div class="container">
+        <h2 class="title has-text-centered has-text-purple is-3 mb-5">
+          Meus Projetos
+        </h2>
+
+          <div class="columns is-multiline">
+            <% projetos.forEach(projeto=> { %>
+              <div class="column is-6-tablet is-4-desktop">
+                <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+                  <div class="card-image">
+                    <figure class="image aspect-1920x1080">
+                      <img src="<%= projeto.imagem %>" alt="Imagem do projeto">
+                    </figure>
+                  </div>
+
+                  <div class="card-content is-flex-grow-1">
+                    <div class="media">
+                      <div class="media-content">
+                        <p class="title is-5 has-text-purple">
+                          <%= projeto.titulo %>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <p>
+                        <%= projeto.descricao %>
+                      </p>
+
+                      <div class="tags mt-3">
+                        <% projeto.tecnologias.forEach(tec=> { %>
+                          <span class="tag is-link is-dark">
+                            <%= tec %>
+                          </span>
+                          <% }); %>
+                      </div>
+
+                      <div class="buttons is-flex is-justify-content-space-between mt-4" style="border-top: none;">
+
+                        <p>
+                          <a href="<%= projeto.github %>" class="button is-small is-link is-dark is-rounded"
+                            target="_blank">
+                            <i class="fab fa-github"></i>&nbsp; Acessar GitHub
+                          </a>
+
+                          <a href="<%= projeto.video %>" class="button is-small is-link is-dark is-rounded"
+                            target="_blank">
+                            <i class="fa-solid fa-video"></i>
+                            &nbsp; Vídeo de Demonstração
+                          </a>
+
+                          <a class="button is-small is-link is-dark is-rounded"
+                            onclick="openModal('<%= projeto.id %>')">
+                            Ver mais
+                          </a>
+
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% }); %>
           </div>
-
         </div>
       </section>
 
-      <footer class="footer has-text-centered">
-        <div class="content">
-          <p class="footer-text">
-            &copy; 2025 - Raphaela Monteiro
-            <br> Todos os direitos reservados
-          </p>
-
-          <div class="footer-icons">
-            <a href="https://www.linkedin.com/in/raphaelamonteiro" target="_blank" class="footer-icon">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/raphaelamonteiro" target="_blank" class="footer-icon">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:raphaelabm.dev@gmail.com" class="footer-icon">
-              <span class="icon"><i class="fas fa-envelope"></i></span>
-            </a>
+      <!-- Modais de Projetos -->
+      <% projetos.forEach(projeto=> { %>
+        <div id="modal-<%= projeto.id %>" class="modal">
+          <div class="modal-background" onclick="closeModal('<%= projeto.id %>')"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">
+                <%= projeto.titulo %>
+              </p>
+              <button class="delete" aria-label="close" onclick="closeModal('<%= projeto.id %>')"></button>
+            </header>
+            <section class="modal-card-body">
+              <div class="modal-body content has-text-left">
+                <%- projeto.descricaoDetalhada %>
+              </div>
+              <!-- Aqui você pode adicionar imagens, links, vídeos etc -->
+            </section>
+            <footer class="modal-card-foot">
+              <% if (projeto.github) { %>
+                <a href="<%= projeto.github %>" class="button is-link" target="_blank">
+                  <i class="fab fa-github"></i>&nbsp; GitHub
+                </a>
+                <% } %>
+                  <% if (projeto.video) { %>
+                    <a href="<%= projeto.video %>" class="button is-light" target="_blank">
+                      <i class="fas fa-video"></i>&nbsp; Vídeo
+                    </a>
+                    <% } %>
+            </footer>
           </div>
-
         </div>
-      </footer>
+        <% }); %>
 
 
+          <!-- Contato -->
+          <section id="contato" class="section has-background-black contact-section">
+            <div class="container has-text-centered">
+              <h2 class="title has-text-white is-3">Entre em contato:</h2>
+              <div class="buttons is-centered contact-buttons">
+                <a href="https://www.linkedin.com/in/raphaelamonteiro/?locale=en_US" target="_blank"
+                  class="button is-dark is-rounded is-medium contact-button">
+                  <span class="icon"><i class="fab fa-linkedin"></i></span>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/raphaelamonteiro" target="_blank"
+                  class="button is-dark is-rounded is-medium contact-button">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>GitHub</span>
+                </a>
+                <a href="mailto:raphaelabm.dev@gmail.com" class="button is-dark is-rounded is-medium contact-button">
+                  <span class="icon"><i class="fas fa-envelope"></i></span>
+                  <span>Email</span>
+                </a>
+              </div>
 
-      <!-- Script do navbar burger -->
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const burger = document.querySelector('.navbar-burger');
-          const menu = document.getElementById(burger.dataset.target);
+            </div>
+          </section>
 
-          burger.addEventListener('click', () => {
-            burger.classList.toggle('is-active');
-            menu.classList.toggle('is-active');
-          });
-        });
-      </script>
+          <footer class="footer has-text-centered">
+            <div class="content">
+              <p class="footer-text">
+                &copy; 2025 - Raphaela Monteiro
+                <br> Todos os direitos reservados
+              </p>
 
+              <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/raphaelamonteiro" target="_blank" class="footer-icon">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/raphaelamonteiro" target="_blank" class="footer-icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:raphaelabm.dev@gmail.com" class="footer-icon">
+                  <span class="icon"><i class="fas fa-envelope"></i></span>
+                </a>
+              </div>
 
+            </div>
+          </footer>
 </body>
 
 </html>
