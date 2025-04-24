@@ -1,13 +1,9 @@
-/* ==============================
-   🌐 Rolagem suave
-   ============================== */
+/* 🌐 Rolagem suave */
 html {
     scroll-behavior: smooth;
 }
 
-/* ==============================
-   🌙 Estilo geral do body
-   ============================== */
+/* 🌙 Estilo geral do body */
 body {
     background-color: #070F2B;
     /* Fundo roxo escuro */
@@ -17,9 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* ==============================
-   🧭 Navbar
-   ============================== */
+/*  Navbar */
 nav.navbar {
     background-color: #0d0e20 !important;
 }
@@ -33,10 +27,7 @@ nav.navbar .navbar-item:hover {
     color: #c8b3f6 !important;
 }
 
-/* ==============================
-   🟪 Hero section
-   ============================== */
-/* Hero customizado */
+/* Hero section */
 /* Estilizando a seção hero com uma imagem de fundo suave */
 .custom-hero {
     background-image: url('/images/fundo.jpg');
@@ -66,9 +57,7 @@ nav.navbar .navbar-item:hover {
 }
 
 
-/* ==============================
-   🎯 Botões principais
-   ============================== */
+/* Botões principais */
 .button.is-link {
     background-color: rgba(13, 14, 32, 0.85);
     border-color: #8c67db;
@@ -82,9 +71,7 @@ nav.navbar .navbar-item:hover {
     border-color: #8c67db;
 }
 
-/* ==============================
-   🎨 Cores utilitárias
-   ============================== */
+/*🎨 Cores utilitárias */
 .has-text-purple-light {
     font-size: 2rem;
     color: #8c67db;
@@ -95,9 +82,7 @@ nav.navbar .navbar-item:hover {
     color: #b794f4 !important;
 }
 
-/* ==============================
-   🧾 Seção Sobre
-   ============================== */
+/*🧾 Seção Sobre */
 #sobre {
     padding: 5rem 1.5rem;
     border-radius: 10px;
@@ -129,9 +114,7 @@ nav.navbar .navbar-item:hover {
     backdrop-filter: blur(10px);
 }
 
-/* ==============================
-   🌐 Ícones sociais
-   ============================== */
+/*🌐 Redes sociais */
 .social-icons .button {
     border: 1px solid #7c3aed;
     margin: 0 0.25rem;
@@ -144,20 +127,74 @@ nav.navbar .navbar-item:hover {
     box-shadow: 0 4px 12px #7c3aed;
 }
 
-/* ==============================
-   🖼️ Estilo da foto
-   ============================== */
+/* 🖼️ Estilo da foto */
 .minha-foto {
     border: 3px solid #7c3aed;
     box-shadow: 0 0 12px rgba(124, 58, 237, 0.6);
 }
 
-/* ==============================
-   📬 Seção de habilidades
-   ============================== */
+/* Seção de hobbies */
+.hobbies-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem 4rem;
+}
+
+.hobby-card {
+    background-color: #1a1a2e;
+    border-radius: 12px;
+    padding: 1rem;
+    width: calc(25% - 1.5rem);
+    /* 4 por linha com gap */
+    min-width: 220px;
+    box-shadow: 0 4px 20px rgba(43, 26, 95, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hobby-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(43, 26, 95, 0.5);
+}
+
+#hobbies h2.title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #a78bfa;
+}
+
+.hobby-card h2 {
+    font-size: 1.5rem;
+    color: #4D55CC;
+}
+
+.hobby-card p {
+    font-size: 0.9rem;
+    color: #d1d1e9;
+}
+
+.hobby-images {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.hobby-images img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Seção de habilidades */
 .skills-section {
     background: linear-gradient(145deg, #0e0e2e, #1f1f3f);
-    padding: 5rem 3rem;
+    padding: 3rem 3rem;
 }
 
 .skills-container {
@@ -173,9 +210,9 @@ nav.navbar .navbar-item:hover {
 }
 
 .tag.is-custom {
-    background-color: #7c3aed;
+    background-color: #1B1A55;
     color: #f0e9ff;
-    border: 3px solid #7c3aed;
+    border: 3px solid #4D55CC;
 }
 
 .tags {
@@ -184,9 +221,7 @@ nav.navbar .navbar-item:hover {
 }
 
 
-/* ==============================
-   📦 Cards e Boxes
-   ============================== */
+/*  📦 Cards e Boxes */
 
 .projetos-section {
     background-color: #0a0b1f;
@@ -293,9 +328,7 @@ nav.navbar .navbar-item:hover {
     object-fit: cover;
 }
 
-/* ==============================
-   ✨ Hero com imagem e overlay
-   ============================== */
+/*✨ Hero com imagem e overlay */
 .hero-custom {
     background-size: cover;
     background-position: center;
@@ -315,9 +348,7 @@ nav.navbar .navbar-item:hover {
     z-index: -1;
 }
 
-/* ==============================
-   📬 Seção de contato
-   ============================== */
+/*📬 Seção de contato */
 .contact-section {
     background: linear-gradient(145deg, #0e0e2e, #1f1f3f);
     padding: 5rem 1.5rem;
@@ -339,9 +370,8 @@ nav.navbar .navbar-item:hover {
     transform: translateY(-2px);
 }
 
-/* ==============================
-   🦶 Rodapé
-   ============================== */
+/* Rodapé */
+
 .footer {
     background: linear-gradient(to right, #5e3ea1, #7a5af5);
     padding: 2rem 1rem;
